@@ -17,4 +17,4 @@ def compute_model_metrics(model, x, y):
     predictions = model.predict(X=x)
     rmse = np.sqrt(mean_squared_error(y, predictions))
     r2 = r2_score(y, predictions)
-    return dict(rmse=rmse, r2=r2)
+    return dict(rmse=rmse, r2=r2, pred='prediction quality')
