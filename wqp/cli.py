@@ -13,9 +13,10 @@ def data():
     """Subcommand group for data operations."""
     pass
 
+
 @data.command()
 @click.option('--data-path', type=click.Path(exists=True), required=True, help='Path to the data file.')
-def wqp(data_path):
+def print_data_path(data_path):
     """Print the value of the provided data path."""
     click.echo(f"Data path is: {data_path}")
 
