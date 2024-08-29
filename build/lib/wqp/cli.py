@@ -1,7 +1,7 @@
 import click
 from wqp import __version__
 
-print(f"Version imported: {__version__}")
+print(f"Version imported is : {__version__}")
 
 @click.group()
 #@click.version_option(version='1.0.0')  # Adds the --version option to the CLI
@@ -15,6 +15,7 @@ def data():
     """Subcommand group for data operations."""
     pass
 
+
 @data.command()
 @click.option('--data-path', type=click.Path(exists=True), required=True, help='Path to the data file.')
 def cli_command(data_path):
@@ -23,3 +24,4 @@ def cli_command(data_path):
 
 if __name__ == '__main__':
     cli()
+
