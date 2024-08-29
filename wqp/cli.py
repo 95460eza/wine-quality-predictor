@@ -24,3 +24,4 @@ def cli_command(data_path):
 
 if __name__ == '__main__':
     cli()
+

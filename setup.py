@@ -37,4 +37,5 @@ setuptools.setup(
     # when the wqp command IN CLI is run, THE FUNCTION CALLED wqp IN wqp.cli WILL be executed
     wqp=wqp.cli:cli
     '''
+    
 )
