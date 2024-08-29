@@ -1,2 +1,3 @@
 scikit-learn>=1
 pandas>=2
+click>=7.0

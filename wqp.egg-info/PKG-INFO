@@ -5,3 +5,4 @@ Summary: Wine quality predictor - a packaged machine learning algorithm to predi
 Author: my_email@email.com
 Requires-Dist: scikit-learn>=1
 Requires-Dist: pandas>=2
+Requires-Dist: click>=7.0
