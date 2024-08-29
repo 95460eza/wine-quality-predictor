@@ -1,9 +1,11 @@
 import click
+from wqp import __version__
 
+print(f"Version imported: {__version__}")
 
 @click.group()
 #@click.version_option(version='1.0.0')  # Adds the --version option to the CLI
-@click.version_option(version='1.0.0')  # Adds the --version option to the CLI
+@click.version_option(__version__)  # Adds the --version option to the CLI
 def cli():
     """The main CLI group."""
     pass
@@ -15,7 +17,7 @@ def data():
 
 @data.command()
 @click.option('--data-path', type=click.Path(exists=True), required=True, help='Path to the data file.')
-def wqp(data_path):
+def cli_command(data_path):
     """Print the value of the provided data path."""
     click.echo(f"Data path is: {data_path}")
 

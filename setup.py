@@ -35,7 +35,7 @@ setuptools.setup(
     [console_scripts]
     # wqp: IS the NAME of the command-line SCRIPT installed with the package and will be available in USERS' PATH.
     # when the wqp command IN CLI is run, THE FUNCTION CALLED wqp IN wqp.cli WILL be executed
-    wqp=wqp.cli:wqp
+    wqp=wqp.cli:cli
     '''
 
 )
