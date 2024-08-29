@@ -1,5 +1,4 @@
-
-```python
+# minimal informations about your project (package name, author, version, dependencies needed BY this package)
 import setuptools
 
 setuptools.setup(
@@ -13,4 +12,3 @@ setuptools.setup(
         "pandas==1.0.1"
     ]
 )
-```
